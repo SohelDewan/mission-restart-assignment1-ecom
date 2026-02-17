@@ -129,18 +129,66 @@ Show 3 top-rated products (you can filter by rating or just pick the first 3) ba
         <div class="pb-12">
             <h2 class="text-5xl font-bold ml-12 ">Trending Now</h2>
         </div>
-        <div class="my-6 mx-auto ml-12 grid grid-cols-2 gap-8 md:grid-cols-3" id="products-container">
+        <div class="my-6 mx-auto ml-12 grid grid-cols-1 gap-8 md:grid-cols-3 " id="products-container">
 
         </div>
     </section>
 
     <!-- Browse by Category -->
-     <section class="my-16 ml-12 ">
+    <section class="my-16 ml-12 ">
         <h3 class="text-4xl font-bold pb-12">Browse by Category:</h3>
-        <div class="category flex justify-between capitalize" id="btn-container">
+        <div class="category flex flex-wrap gap-4 justify-between capitalize" id="btn-container">
             <!-- <div class="btn"></div> -->
         </div>
-     </section>
+    </section>
+    <!-- Footer section -->
+    <footer class="bg-[#1E2939] py-12 ">
+        <div class="flex flex-wrap gap-4 justify-between p-6 ml-12">
+            <div>
+                <h2 class="text-2xl font-bold text-[#4F39F6] pb-6">SwiftCart</h2>
+                <p class="text-gray-200 flex flex-wrap">Your one-stop shop for all your fashion and lifestyle needs.<br>
+                    Quality products, fast delivery, and excellent support.</p>
+            </div>
+            <div class="text-gray-200 ">
+                <h3 class="text-xl">Quick Links</h3>
+                <ul class="grid grid-row">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
+            <div class="text-gray-200 ">
+                <h3 class="text-xl">Support</h3>
+                <ul class="grid grid-row">
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Shipping</a></li>
+                    <li><a href="">Returns</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="text-gray-200">
+                <h4 class="pb-6">SUBSCRIBE TO OUR NEWSLETTER</h4>
+                <p>The latest news, articles, and resources, sent to your inbox weekly.</p>
+                <div class="pt-6">
+                    <input class="rounded p-1 bg-white text-gray-600 " type="email" name="" id=""
+                        placeholder="Enter your email">
+                    <button class="btn btn-primary pl-4">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <hr class="text-gray-200 mb-4">
+        <div class="flex flex-wrap justify-between gap-8 text-gray-200 ml-12 ">
+            <p>© 2025 SwiftCart, Inc. All rights reserved.</p>
+            <div class="mr-12 flex gap-4">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
     <script src="category.js"></script>
