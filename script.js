@@ -17,11 +17,16 @@ const displayProducts = (products) => {
                 <figure>
                     <img src="${product.image}" />
                 </figure>
-                <div class="card-body">
+                <div class="card-body ">
+                <div class="flex gap-20">
+                <p class='capitalize bg-[#EEF2FF] text-[#4F39F6] rounded-xl p-1 '>${product.category}</p>
+                <p class="ml-4">Rating:${product.rating.rate} (${product.rating.count})</p>
+                </div>            
                     <h2 class="card-title">${product.title}</h2>
-                    <p>${product.description}</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                    <h2 class="text-3xl font-bold">$${product.price}</h2>
+                    <div class="card-actions justify-between">                        
+                        <button class="btn"><i class="fa-regular fa-eye"></i>Details</button>
+                        <button class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i>Add</button>
                     </div>
                 </div>
             </div>
