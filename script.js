@@ -8,19 +8,19 @@ const displayProducts = (products) => {
     // console.log(products)
     const productsContainer = document.getElementById("products-container")
     productsContainer.innerHTML = "";
-    const firstFour = products.slice(0,4)
-    for(let product of firstFour){
-        console.log(product);
+    const firstFour = products.slice(14, 22)
+    for (let product of firstFour) {
+        // console.log(product);
         const cardDiv = document.createElement('div');
-        cardDiv.innerHTML=`
-           <div class="card bg-base-100 w-96 shadow-sm">
-                <figure>
-                    <img src="${product.image}" />
+        cardDiv.innerHTML = `
+           <div class="card bg-base-100 w-96 shadow-sm h-full">
+                <figure  class="bg-[#E5E7EB] h-full">
+                    <img class="scale-60" src="${product.image}" />
                 </figure>
                 <div class="card-body ">
                 <div class="flex gap-20">
                 <p class='capitalize bg-[#EEF2FF] text-[#4F39F6] rounded-xl p-1 '>${product.category}</p>
-                <p class="ml-4">Rating:${product.rating.rate} (${product.rating.count})</p>
+                <p class="ml-4">Rating: <span class="text-yellow-400 font-bold">${product.rating.rate} </span>(${product.rating.count})</p>
                 </div>            
                     <h2 class="card-title">${product.title}</h2>
                     <h2 class="text-3xl font-bold">$${product.price}</h2>
@@ -31,7 +31,8 @@ const displayProducts = (products) => {
                 </div>
             </div>
             `;
-            productsContainer.append(cardDiv);
-        }
+        productsContainer.append(cardDiv);
+    }
 }
+
 loadProducts()

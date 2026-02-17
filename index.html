@@ -126,15 +126,24 @@
     <!-- 4) Trending / Top Rated Section
 Show 3 top-rated products (you can filter by rating or just pick the first 3) based on API data or hardcoded for layout practice. -->
     <section class="py-16  mx-auto">
-        <div>
-            <h2 class="text-5xl font-bold ml-12">Trending Now</h2>
+        <div class="pb-12">
+            <h2 class="text-5xl font-bold ml-12 ">Trending Now</h2>
         </div>
         <div class="my-6 mx-auto ml-12 grid grid-cols-2 gap-8 md:grid-cols-3" id="products-container">
 
         </div>
     </section>
 
+    <!-- Browse by Category -->
+     <section class="my-16 ml-12 ">
+        <h3 class="text-4xl font-bold pb-12">Browse by Category:</h3>
+        <div class="category flex justify-between capitalize" id="btn-container">
+            <!-- <div class="btn"></div> -->
+        </div>
+     </section>
+
     <script src="script.js"></script>
+    <script src="category.js"></script>
 </body>
 
 </html>
